@@ -5,45 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
+    body { background-color: #faf8ef; }
     .news-title {
       color: #FFC107;
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
       text-align: center;
-      margin-top: 26px;
-      margin-bottom: 16px;
+      margin: 30px 0 10px 0;
+      letter-spacing: .5px;
     }
+    .sectionhead { color: #007bff; font-size: 1.2rem; font-weight: 600; margin-top: 24px;}
     .highlight { color: #E53935; font-weight: 600; }
-    .sectionhead { color: #1B5E20; font-weight: 600; margin-top:16px;}
+    ul li { margin-bottom: 10px;}
+    .poster-img {
+      display:block;
+      max-width:320px;
+      margin: 18px auto 18px auto;
+      border-radius:11px;
+      border:3px solid #ffc107;
+      box-shadow:0 4px 20px rgba(44,44,99,.14);
+    }
+    .card-news {
+      background: linear-gradient(100deg, #fff9e6 0%, #f3eaff 100%);
+      border-radius: 18px;
+      padding: 28px 18px 22px 18px;
+      box-shadow: 0 3px 10px rgba(72,48,133,.13);
+    }
   </style>
 </head>
-<body class="bg-light">
-  <div class="container mt-3 mb-4">
-    <img src="war2.jpg" alt="War 2 Movie Poster" class="img-fluid rounded mb-3" style="max-width: 380px; display: block; margin: auto;">
-    <div class="news-title">वॉर 2 बॉक्स ऑफिस: एक्शन हीरो की कमाई की रोमांचक जंग!</div>
+<body>
+  <div class="container mt-2 mb-4">
+    <div class="news-title">Bollywood Trending News</div>
+    <div class="card-news">
+      <!-- News Intro & first section -->
+      <h4 class="highlight text-center mb-3">वॉर 2 बॉक्स ऑफिस: एक्शन हीरो की कमाई की रोमांचक जंग!</h4>
+      <div style="font-size:17px; color:#222; line-height:1.68; margin-bottom:2px;">
+        कल्पना कीजिए, ऋतिक रोशन और जूनियर एनटीआर की ये स्पाई थ्रिलर फिल्म बॉक्स ऑफिस पर एक असली 'वॉर' लड़ रही है—कभी तेज रफ्तार, कभी सुस्त पड़ती! रिलीज के 11 दिन बाद भी ये दर्शकों को लुभा रही है, लेकिन रजनीकांत की 'कुली' से टक्कर में थोड़ी पिछड़ गई।
+        <span class="sectionhead">कमाई का एक्शन सीक्वेंस — धमाकेदार शुरुआत:</span>
+        <ul style="color:#222; background:#fff7df; border-radius:5px; padding:10px 18px 7px 10px;">
+          <li><span class="highlight">दिन 1: </span><span style="color:#222;">₹52 करोड़</span></li>
+          <li><span class="highlight">दिन 2: </span><span style="color:#222;">₹57.35 करोड़</span></li>
+          <li><span class="highlight">दिन 3: </span><span style="color:#222;">₹33.25 करोड़</span></li>
+          <li><span class="highlight">दिन 4: </span><span style="color:#222;">₹31.3 करोड़</span></li>
+        </ul>
+        <!-- Movie poster shown between news blocks -->
+        <img src="war2.png" alt="War 2 Movie Poster" class="poster-img">
+        <span class="sectionhead">ट्विस्ट और क्लाइमैक्स:</span>
+        <ul style="color:#222; background:#eaf1ff; border-radius:5px; padding:10px 18px 7px 10px;">
+          <li><span class="highlight">दिन 5-9: </span>गिरावट: ₹8.4, ₹9, ₹5.59, ₹4.71, ₹4 करोड़</li>
+          <li><span class="highlight">दिन 10: </span>कमबैक — ₹6.2-6.25 करोड़, टोटल ₹214.5 करोड़</li>
+          <li><span class="highlight">दिन 11: </span>शुरुआती आंकड़े — ₹0.17 करोड़, शाम को उम्मीद</li>
+        </ul>
+      </div>
 
-    <div class="mb-2 text-center text-muted" style="font-size:15px;">14 अगस्त 2025 | बॉलीवुड</div>
-
-    <div style="font-size:17px; color:#222; line-height:1.7; margin-bottom:6px;">
-      कल्पना कीजिए, ऋतिक रोशन और जूनियर एनटीआर की ये स्पाई थ्रिलर फिल्म बॉक्स ऑफिस पर एक असली 'वॉर' लड़ रही है—कभी तेज रफ्तार, कभी सुस्त पड़ती! रिलीज के 11 दिन बाद भी ये दर्शकों को लुभा रही है, लेकिन रजनीकांत की 'कुली' से टक्कर में थोड़ी पिछड़ गई। आइए, मजेदार अंदाज में देखें इसकी कमाई की कहानी, जैसे कोई एक्शन सीक्वेंस हो।
+      <div class="sectionhead">कुल मिलाकर: हिट या फ्लॉप की जंग?</div>
+      <div style="font-size:16.5px; color:#222; margin-top:7px;">
+        फिल्म ने 200 करोड़ क्लब में धमाकेदार एंट्री ली और ऋतिक की 'फाइटर' (₹212 करोड़) को पीछे छोड़ दिया—अब ये उनकी तीसरी सबसे ज्यादा कमाने वाली मूवी है! 
+        <br>ग्लोबल कमाई 330 करोड़ पार, लेकिन भारी बजट के सामने 400 करोड़ अभी दूर।
+        <span style="color:#e67113; font-weight:600">YRF स्पाई यूनिवर्स की धड़कन बनी, लेकिन रजनीकांत की ‘कुली’ ने बॉक्स ऑफिस पर टक्कर दी।</span>
+        <br>मिश्रित समीक्षाओं और प्रतियोगिता के बावजूद क्या अगले दिन फिर कोई उछाल आएगा?  
+        <b style="color:#1976d2;">बॉक्स ऑफिस की यह जंग अभी जारी है ...</b>
+      </div>
     </div>
-
-    <div class="sectionhead">कमाई की धमाकेदार शुरुआत से सुस्त मोड़ तक</div>
-    <ul style="color:#444; font-size:16px; margin-top:5px;">
-      <li><span class="highlight">दिन 1 से 4 :</span> फिल्म ने धुआंधार एंट्री ली! पहले दिन 52 करोड़, दूसरे पर 57.35 करोड़—जैसे कोई सुपरहीरो की एंट्री! तीसरे और चौथे दिन 33.25 और 31.3 करोड़ के साथ रफ्तार बनी रही, कुल मिलाकर पहले वीकेंड में धमाल।</li>
-      <li><span class="highlight">दिन 5 से 9 :</span> यहां आया ट्विस्ट! वीकडेज में गिरावट—8.4, 9, 5.59, 4.71 और 4 करोड़। मानो फिल्म थक गई हो, लेकिन फैंस की ताकत से टिकी रही।</li>
-      <li><span class="highlight">दिन 10 (शनिवार) :</span> वाह, कमबैक! 6.2-6.25 करोड़ कमाए, जैसे कोई क्लाइमैक्स सीन जहां हीरो वापस लड़ता है। इससे कुल कमाई 214.5 करोड़ पर पहुंची।</li>
-      <li><span class="highlight">दिन 11 (रविवार) :</span> अभी शुरुआती आंकड़े आए हैं—करीब 0.17 करोड़ (रात के शो के बाद बढ़ सकता है)। ऑक्यूपेंसी 16-21% रही, सुबह के शो में दर्शक कम, लेकिन शाम को उम्मीद।</li>
-    </ul>
-
-    <div class="sectionhead">कुल मिलाकर: हिट या फ्लॉप की जंग?</div>
-    <div style="font-size:16.5px;">
-      फिल्म ने 200 करोड़ क्लब में एंट्री ली और ऋतिक की 'फाइटर' (212 करोड़) को पीछे छोड़ दिया, अब ये उनकी तीसरी सबसे ज्यादा कमाने वाली मूवी है! वैश्विक स्तर पर 330 करोड़ पार, विदेशों से 73 करोड़। लेकिन 325-400 करोड़ के बजट को देखते हुए, 400 करोड़ का टारगेट दूर का सपना लग रहा—खासकर 'कुली' की 10 करोड़ वाली दमदार पारी के सामने।
-      <br><br>
-      ये फिल्म YRF स्पाई यूनिवर्स की धड़कन है, लेकिन मिश्रित रिव्यूज और कॉम्पिटिशन ने इसे चुनौती दी। क्या अगले दिन ये फिर उछाल मारेगी? इंतजार कीजिए, बॉक्स ऑफिस की ये जंग अभी जारी है!
-    </div>
-
-    <a href="bollywood.html" class="btn btn-outline-warning mt-4 mb-2" style="font-weight:600;">← बॉलीवुड सभी ख़बरें</a>
+    <a href="bollywood.html" class="btn btn-outline-warning mt-4 mb-2" style="font-weight:600;">← वापस बॉलीवुड खबरें</a>
   </div>
 </body>
 </html>
