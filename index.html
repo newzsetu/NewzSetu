@@ -12,22 +12,6 @@
       <h1 class="display-4 text-warning mt-3">न्यूज़सेतु</h1>
       <p class="lead text-dark">निष्पक्ष समाचार :</p>
     </div>
-    <!-- Search Bar Start -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-md-6">
-        <form onsubmit="searchNews(event)">
-          <div class="input-group">
-            <input type="text" class="form-control" id="searchInput" placeholder="खबर खोजें...">
-            <div class="input-group-append">
-              <button class="btn btn-outline-warning" type="submit">खोजें</button>
-            </div>
-          </div>
-        </form>
-        <div id="searchResult" class="mt-2 text-center"></div>
-      </div>
-    </div>
-    <!-- Search Bar End -->
-
     <h2 class="mb-4 text-center text-warning">केटेगरीज</h2>
     <div class="row justify-content-center">
       <div class="col-sm-6 col-md-3 mb-2">
@@ -59,23 +43,5 @@
       © 2025 न्यूज़सेतु | निष्पक्ष हिंदी समाचार
     </footer>
   </div>
-  <!-- Search JS -->
-  <script>
-    function searchNews(event){
-      event.preventDefault();
-      var input = document.getElementById('searchInput').value;
-      var result = '';
-      if(input.includes('राजनीति') || input.includes('राजनीतिक')) result = '<a href="politics.html" class="btn btn-primary mt-2">राजनीतिक अखाड़ा</a>';
-      else if(input.includes('खेल')) result = '<a href="sports.html" class="btn btn-info mt-2">खेल खिलाड़ी</a>';
-      else if(input.includes('ट्रेंडिंग')) result = '<a href="trending.html" class="btn btn-danger mt-2">ट्रेंडिंग ख़बरें</a>';
-      else if(input.includes('फिल्म') || input.includes('बॉलीवुड')) result = '<a href="bollywood.html" class="btn btn-warning mt-2">फिल्मी रिपोर्ट</a>';
-      else if(input.includes('शिक्षा')) result = '<a href="education.html" class="btn btn-success mt-2">शिक्षा क्षेत्र</a>';
-      else if(input.includes('दुनिया')) result = '<a href="world.html" class="btn btn-secondary mt-2">दुनिया की ख़बरें</a>';
-      else if(input.includes('धंधा') || input.includes('बिजनेस')) result = '<a href="business.html" class="btn btn-dark mt-2">धंधे की बात</a>';
-      else if(input.includes('टेक') || input.includes('टेक्नोलॉजी')) result = '<a href="technology.html" class="btn btn-info mt-2">टेक्नोलॉजी</a>';
-      else result = '<span class="text-danger">खबर या श्रेणी नहीं मिली!</span>';
-      document.getElementById('searchResult').innerHTML = result;
-    }
-  </script>
 </body>
 </html>
